@@ -37,7 +37,7 @@ class Metodo5Calibracion:
 st.set_page_config(page_title="Calibración EPA Método 5", layout="wide")
 
 st.title("Calibración de Consolas de Muestreo (EPA Método 5)")
-st.write("Introduce los datos de calibración en la tabla para calcular $Y$ y $\Delta H_{@}$.")
+st.write("Introducí los datos de calibración en la tabla para calcular $Y$ y $\Delta H_{@}$.")
 
 # Panel lateral para la presión barométrica
 st.sidebar.header("Condiciones Ambientales")
