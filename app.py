@@ -36,7 +36,7 @@ class Metodo5Calibracion:
 # --- CONFIGURACIÓN DE LA INTERFAZ DE STREAMLIT ---
 st.set_page_config(page_title="Calibración EPA Método 5", layout="wide")
 
-st.title("🎛️ Calibración de Consolas de Muestreo (EPA Método 5)")
+st.title("Calibración de Consolas de Muestreo (EPA Método 5)")
 st.write("Introduce los datos de calibración en la tabla para calcular $Y$ y $\Delta H_{@}$.")
 
 # Panel lateral para la presión barométrica
@@ -56,13 +56,13 @@ datos_iniciales = {
 df_inicial = pd.DataFrame(datos_iniciales)
 
 st.subheader("1. Entrada de datos del ensayo")
-st.info("💡 Puedes hacer doble clic en cualquier celda para editar los valores directamente.")
+st.info("Podés hacer doble clic en cualquier celda para editar los valores directamente.")
 
 # Tabla editable en Streamlit
 df_editado = st.data_editor(df_inicial, num_rows="fixed", use_container_width=True, hide_index=True)
 
 st.subheader("2. Procesamiento de resultados")
-if st.button("🚀 Calcular Parámetros", type="primary"):
+if st.button("Calcular Parámetros", type="primary"):
     # Convertir las columnas editadas de la tabla a vectores de NumPy
     vw = df_editado["Vw (Vol. Patrón)"].to_numpy()
     tw = df_editado["Tw (Temp. Patrón K)"].to_numpy()
